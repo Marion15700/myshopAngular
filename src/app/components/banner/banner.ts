@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './banner.css',
 })
 export class Banner {
+  titre: string = "bienvenue sur notre boutique"
+
+  y :boolean = true
+
+  somme(a:number, b:number){
+    return a+b
+  };
 
 }

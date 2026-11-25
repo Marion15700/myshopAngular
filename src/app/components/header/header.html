@@ -1,40 +1,49 @@
 <header>
- <!-- titre principal -->
-        <h1>My Shop</h1>
+    <!-- titre principal -->
+    <h1>My Shop</h1>
 
-        <!-- creer une liste non ordonnée -->
-        <!-- menu de navigation -->
-            <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
-                        <li class="nav-item">
-                            <a href="index.html">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/about.html">A propos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/products.html">Produits</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/signUp.html">Inscription</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/signIn.html">Connexion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/panier.html">Panier</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- creer une liste non ordonnée -->
+    <!-- menu de navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a routerLink="/">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/presentation">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/product-page">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/inscription-form">Inscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/connexion-form">Connexion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/table-panier">Panier</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/contact-form">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dashboard
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" routerLink="/addproduct-form">Add product</a></li>
+                            <li><a class="dropdown-item" routerLink="/admin">Admin</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 </header>

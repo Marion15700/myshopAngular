@@ -1,0 +1,38 @@
+@if (isConnected){
+    <div>bonjour marion!</div>
+}
+
+<table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Produit</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Prix</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- AFFICHAGE DU TABLEAU A PARTIR DU TS -->
+                    <!-- product ou elt var qui represente un product a chaque tour -->
+                     <!-- of permet de parcourir le tableau -->
+                      <!-- productsTable = tableau a parcourir -->
+                       <!-- track product.id permet a angular d'identifier chaque produit par son id -->
+                        <!-- let i=$index permet de recuperer l'index de position de chaque element du tableau -->
+
+                    @for(product of productsTab; track product.id; let i=$index){
+                        <tr>
+                        <th scope="row">{{product._id}}</th>
+                        <td>{{product.name}}</td>
+                        <td>{{product.description}}</td>
+                        <td>{{product.price}}£</td>
+                        <td>
+                            <button type="button" class="btn btn-primary" (click)="display(1)">voir details</button>
+                           <button type="button" class="btn btn-secondary" (click)="goToEdit(product._id)">Modifier</button>
+                            <button type="button" class="btn btn-danger" (click)="deleteproduct(product._id)">Supprimer</button> 
+                        </td>
+                    </tr>
+
+                    } 
+                </tbody>
+            </table>
